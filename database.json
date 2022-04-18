@@ -1,0 +1,37 @@
+{
+  "dev": {
+    "driver": "sqlite3",
+    "filename": "~/dev.db"
+  },
+
+  "test": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+
+  "prod": {
+    "driver": "mysql",
+    "user": "root",
+    "password": "root"
+  },
+
+  "pg": {
+    "driver": "pg",
+    "user": "frontstore",
+    "password": "password",
+    "host": "localhost",
+    "database": "frontstore",
+    "port": "5432",
+    "schema": "my_schema"
+  },
+
+  "test": {
+    "driver": "pg",
+    "user": "frontstore",
+    "password": "password",
+    "host": "localhost",
+    "database": "storefront_test",
+    "port": "5432",
+    "schema": "my_schema"
+  }
+}
